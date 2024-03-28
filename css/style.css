@@ -1020,6 +1020,20 @@ section {
     margin-bottom: 48px;
   }
 
+  .container_footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: baseline;
+    max-width: 530px;
+  }
+
+  .sub-form {
+    flex-direction: row;
+  }
+
   .right-navi-list {
     flex-direction: column;
     gap: 12px;
@@ -1044,66 +1058,63 @@ section {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .right-navi-list {
     flex-direction: row;
     padding: 24px 0;
     gap: 40px;
   }
-}
 
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
 
-.list_points_sec_two {
-  width: calc((100% - 24px) / 4);
-}
+  .list_points_sec_two {
+    width: calc((100% - 24px) / 4);
+  }
 
-.list_sec_four {
-  column-gap: 24px;
-  row-gap: 48px;
-}
+  .list_sec_four {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
 
-.list_points_sec_four {
-  width: calc((100% - 48px) / 3);
-}
+  .list_points_sec_four {
+    width: calc((100% - 48px) / 3);
+  }
 
-.firstsec_style {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-desktop.jpg);
-  max-width: 1440px;
-  padding: 188px 0;
-}
-
-.section-two-list {
-  flex-wrap: nowrap;
-}
-
-.container_footer {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.sub-form {
-  flex-direction: row;
-}
-
-@media screen ((min-width: 1158px) and (min-resolution: 192dpi)) {
   .firstsec_style {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-desktop@2x.jpg);
+      url(../images/hero-desktop.jpg);
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .section-two-list {
+    flex-wrap: nowrap;
+  }
+
+  .container_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+  .firstsec_style {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-desktop@2x.jpg);
+}
+  }
