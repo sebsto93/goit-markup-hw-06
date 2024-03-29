@@ -941,6 +941,20 @@ section {
     display: none;
   }
 
+  .current::after {
+    content: "";
+    background-color: #404bbf;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
   .section-two-list {
     flex-direction: row;
     flex-wrap: wrap;
