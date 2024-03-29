@@ -69,6 +69,7 @@ body {
 }
 
 .kontakt_style {
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -257,7 +258,6 @@ body {
 }
 
 .header_style {
-  padding: 16px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -288,7 +288,6 @@ body {
 
 .right-navi-list {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
 }
 
@@ -467,7 +466,7 @@ section {
 }
 
 .footer_text {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .sm_footer_icons {
@@ -521,10 +520,11 @@ section {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
+  gap: 16px;
 }
 
 .subscribe {
-  margin: 0;
+  margin: auto;
 }
 
 .sub-form {
@@ -1037,8 +1037,21 @@ section {
   .right-navi-list {
     flex-direction: column;
     gap: 12px;
-    padding: 16px;
   }
+
+  .sm_footer {
+    text-align: left;
+  }
+
+  .footer_logo {
+    text-align: left;
+  }
+
+  .thirdhead.mobile-h2 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 700;
+}
 }
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
@@ -1107,14 +1120,28 @@ section {
     flex-direction: row;
     align-items: baseline;
   }
+
+  .kontakt_style {
+    font-size: 16px;
+  }
+
+    .thirdhead.mobile-h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+    .goal {
+  border: 1px solid #8e8f99;
+}
 }
 
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
   .firstsec_style {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-desktop@2x.jpg);
-}
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop@2x.jpg);
   }
+}
